@@ -1,0 +1,37 @@
+{
+  "name": "posts-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "start-dev": "nodemon ./bin/www",
+    "config": "node ./bin/uploadUsers",
+    "clean-comments": "node ./bin/pruneComments"
+  },
+  "dependencies": {
+    "@app/classes": "file:classes",
+    "@app/config": "file:config",
+    "@app/constants": "file:constants",
+    "@app/controllers": "file:controllers",
+    "@app/data": "file:data",
+    "@app/middlewares": "file:middlewares",
+    "@app/models": "file:models",
+    "@app/routes": "file:routes",
+    "@app/services": "file:services",
+    "@app/utils": "file:utils",
+    "@app/validators": "file:validators",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "express-validator": "^6.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "morgan": "~1.9.1",
+    "password-generator": "^2.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
